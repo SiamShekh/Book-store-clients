@@ -24,7 +24,7 @@ const MainLayouts = () => {
                 <Outlet />
             </div>
 
-            <div className="bg-black">
+            <div className="border-t border-t-black ">
                 <Footer />
             </div>
 
