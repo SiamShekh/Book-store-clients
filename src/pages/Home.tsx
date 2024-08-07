@@ -1,8 +1,82 @@
+import ImageGallery from "react-image-gallery";
+import { Link } from "react-router-dom";
+import Best_seller_category_item from "../components/templates/home/best_seller_category_item";
+
+const images = [
+    {
+        original: "https://ds.rokomari.store/rokomari110/banner/DESKTOPfd11bb44-7279-4bfc-900c-febbee8b4e94.webp",
+        thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+        original: "https://ds.rokomari.store/rokomari110/banner/DESKTOP34ac65b5-fed6-4a13-9de3-345514356565.webp",
+        thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+];
 
 const Home = () => {
     return (
         <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi facilis incidunt, nesciunt dolorum autem reprehenderit labore vitae expedita, nostrum dignissimos adipisci unde vero iure cupiditate laudantium, culpa obcaecati sapiente eius. Suscipit neque, corporis eius porro veritatis omnis assumenda impedit mollitia praesentium nobis sunt tempore. Velit vero modi neque iure illo illum accusamus id? Reprehenderit unde saepe fuga autem recusandae possimus sunt soluta, dolor amet dignissimos veniam praesentium, et voluptas? Sequi illo explicabo perferendis, quaerat fugiat vel consequuntur quis iste debitis placeat cum nihil tenetur omnis sit voluptatem amet aperiam ullam totam commodi et magnam quae, culpa recusandae. Iste earum aperiam aspernatur aut dignissimos, tempore amet ipsum magnam enim officiis eaque provident ut iusto veniam fugiat! Reiciendis eum iure quae ullam dolorem unde nobis laudantium inventore quia repudiandae delectus praesentium, quam suscipit dicta asperiores excepturi. Quas in ut, fugiat quo, perspiciatis voluptas nihil, magnam deleniti cumque pariatur exercitationem ullam. Ducimus enim possimus cum unde error perferendis tempora, dolorem quisquam libero facere dolor pariatur eligendi sit quae incidunt magni aut, rerum quibusdam maxime! Itaque tempore eaque nemo illo laboriosam veniam possimus atque quod, in aut, quidem autem. Non, possimus molestias. Architecto rerum eos ea placeat reiciendis? Nobis, possimus id! Perferendis hic accusantium nemo ducimus suscipit repellat a laborum consequuntur corporis ipsa porro temporibus, iure laboriosam quidem beatae reprehenderit? Exercitationem veniam aliquid dolorum sunt hic deserunt, rem consectetur sit inventore perferendis nesciunt illo, corporis omnis dicta earum qui repellendus neque? Minima id maxime cumque aliquid magnam, omnis atque harum! Fugit, officia itaque? Aliquid sunt necessitatibus nostrum vitae excepturi quod natus sint, ad dolorem dolorum ea error laudantium repellendus officiis? Expedita explicabo quasi nulla, aut atque quisquam praesentium et similique. Ipsum quod cupiditate et ipsa ipsam hic totam quasi ea praesentium voluptatibus animi optio dolorem in laboriosam corporis obcaecati, corrupti nemo modi debitis doloribus sapiente sequi exercitationem. Inventore facilis sit rerum optio possimus enim, officiis temporibus iusto natus est, amet vero libero suscipit dolor ratione praesentium nam tempora qui commodi reiciendis incidunt placeat harum cum rem! Aliquid, laboriosam porro in harum expedita exercitationem earum quae dolorum recusandae quam nam delectus similique explicabo, quas quod, maiores placeat necessitatibus commodi! Iste amet eum voluptatibus magnam odio ad voluptates reiciendis ab vero quasi molestiae, aut nesciunt repellat maiores praesentium. Expedita debitis, id, magni iure nobis cum voluptatum dolores autem totam ratione quae repudiandae quos molestias. Atque eos ut culpa sit aspernatur praesentium eveniet accusantium molestias facilis? Libero doloribus quidem voluptas excepturi minima a perferendis numquam non! Ut explicabo et id eum dolore quod sunt quis dolorum veritatis nulla deleniti voluptatibus ipsa nostrum vitae minima suscipit, officia porro illum repudiandae iste impedit repellendus quia quidem. Necessitatibus, voluptate sed. Perferendis, porro provident minus omnis dicta error quibusdam. Ullam ad placeat laudantium saepe, eveniet omnis nemo nesciunt vel nihil. Porro incidunt aut ea optio nemo, fugiat eligendi aperiam similique inventore harum dolor beatae. Blanditiis ut maxime labore perspiciatis fugiat deleniti sed. Obcaecati doloremque necessitatibus, eum perferendis, esse sit voluptates commodi dolores enim iure iste nemo amet? In id tempora excepturi vero ea. Ducimus delectus porro placeat laboriosam nostrum quam quidem veritatis, neque qui a amet incidunt assumenda possimus facere architecto hic ratione. Laborum quae quam, quaerat voluptatem fugiat quis numquam perspiciatis cumque ea officia, inventore, adipisci velit perferendis sit distinctio consequuntur enim ducimus reprehenderit ipsum molestias ab aliquid doloremque! Officiis, ex. Quas pariatur quis porro quae sapiente, itaque, vitae, dolorum ipsa temporibus nemo iste tempore neque explicabo! Harum voluptatibus nobis officia esse quidem laborum vitae illum iusto natus! Rerum assumenda dignissimos quod accusantium error, officiis eius dolor esse maxime earum voluptatibus nostrum praesentium, voluptate eligendi molestiae. Assumenda qui dicta quaerat tempora odio, facere eos ipsa, alias voluptatibus explicabo nesciunt vero modi libero? Ut quidem, doloremque facere consequuntur rem laudantium explicabo, saepe dignissimos omnis inventore similique earum distinctio. Iste quia blanditiis officiis, reiciendis obcaecati tempore natus voluptatibus ab optio qui harum reprehenderit, est iusto atque labore facere maiores excepturi aliquam sapiente cumque minus officia laudantium. Esse beatae numquam omnis eaque ab dicta vero iste inventore quibusdam ratione? Excepturi aut possimus dicta architecto in esse dignissimos accusantium dolorum quos deserunt nihil velit, eligendi iusto totam enim amet quibusdam voluptatem voluptate fugiat porro molestias optio. Ratione tempora veniam sunt assumenda rem! Placeat quod harum eius impedit nobis molestiae expedita iusto? Debitis aliquam dolorem voluptas sint, deserunt necessitatibus sit accusamus facilis id exercitationem voluptatem recusandae corporis iusto facere consequatur pariatur iure obcaecati inventore odio omnis, quibusdam commodi eius provident. Ipsa, quia! Voluptate non sed eos saepe quam blanditiis, eius totam obcaecati enim laudantium eaque delectus sequi aut dolorum, neque animi necessitatibus veniam iusto repellendus facere rerum amet. Illo sunt nobis est, optio quod quis itaque error fugiat. Vel molestias debitis tenetur officiis reiciendis eos cupiditate animi nesciunt, accusamus quos est corporis. Numquam harum quaerat nulla ad, nam ex delectus inventore molestias, voluptatem placeat, iure quia mollitia nisi dicta. Distinctio impedit doloremque voluptatum, dolores velit reprehenderit ipsum molestias! Aliquid aut ducimus illum, nihil, natus saepe molestiae nesciunt quibusdam, voluptatibus voluptatem delectus perspiciatis quisquam consectetur adipisci? Veniam suscipit ratione quis doloremque laboriosam ullam, officia libero recusandae deserunt temporibus, exercitationem atque autem est? Sit laborum obcaecati odit ipsa quibusdam ex facere corporis magni minus consequatur maxime dolorum ipsam sint necessitatibus, officia accusantium! Pariatur, in, hic explicabo aperiam vitae nam animi, ad accusantium repellendus ratione autem quaerat porro rem cumque suscipit nihil. Deserunt voluptatum adipisci eos corporis dicta id quod quo, minus ab atque rem reprehenderit tenetur beatae tempore, exercitationem, explicabo iste. Itaque adipisci harum aut possimus aliquam quisquam nulla, tenetur nihil ad, aliquid facere sequi libero blanditiis. Corporis, voluptatem. Incidunt deleniti inventore, debitis hic id vitae minima laudantium quidem laborum voluptatibus dicta sapiente, porro sequi quia nam perferendis cumque quaerat eaque earum nobis doloremque officia deserunt! Atque impedit cum laudantium soluta, modi expedita ut ratione, illo autem aspernatur perferendis nihil culpa ipsa exercitationem possimus enim quam at aperiam? Molestias tempora vitae dolorum rem eveniet libero doloremque doloribus ipsum id vero labore, iure accusantium ab eius eaque maxime explicabo autem. Illo quo, laboriosam autem vel quod aut.
+            <section about="product banner slide">
+                <div className="rounded-2xl w-full max-h-96">
+                    <ImageGallery
+                        autoPlay
+                        infinite
+                        showBullets
+                        showNav={false}
+                        showPlayButton={false}
+                        showFullscreenButton={false}
+                        showThumbnails={false}
+                        items={images} />
+                </div>
+            </section>
+
+            <section about="Best Seller category" className="mt-5">
+                <div className="flex justify-between items-center">
+                    <p className="font-poppins text-xl">Best Seller</p>
+                    <Link to={'/#'} className="border px-6 py-2 hover:bg-black hover:text-white border-black">Show All</Link>
+                </div>
+
+                <div className="grid grid-cols-5 gap-3 mt-5">
+                    <Best_seller_category_item />
+                    <Best_seller_category_item />
+                    <Best_seller_category_item />
+                    <Best_seller_category_item />
+                    <Best_seller_category_item />
+                </div>
+            </section>
+
+            <section about="super store" className="mt-5">
+                <div className="flex justify-between items-center">
+                    <p className="font-poppins text-xl">Superstore</p>
+                </div>
+
+                <div className="grid grid-cols-5 gap-3 mt-5">
+                    <div className="bg-gray-300 shadow-xl rounded-xl p-3 cursor-pointer">
+                        <img src="https://www.rokomari.com/static/200/images/icons/home-popular-category/Serial14.png" alt="superstore" className="size-16 bg-blend-color-burn mx-auto" />
+                        <p className="font-poppins line-clamp-1 mt-3 text-center">Jomuna Farmecy</p>
+                    </div>
+
+                    <div className="bg-gray-300 shadow-xl rounded-xl p-3 cursor-pointer">
+                        <img src="https://www.rokomari.com/static/200/images/icons/home-popular-category/Serial14.png" alt="superstore" className="size-16 bg-blend-color-burn mx-auto" />
+                        <p className="font-poppins line-clamp-1 mt-3 text-center">Jomuna Farmecy</p>
+                    </div>
+
+                    <div className="bg-gray-300 shadow-xl rounded-xl p-3 cursor-pointer">
+                        <img src="https://www.rokomari.com/static/200/images/icons/home-popular-category/Serial14.png" alt="superstore" className="size-16 bg-blend-color-burn mx-auto" />
+                        <p className="font-poppins line-clamp-1 mt-3 text-center">Jomuna Farmecy</p>
+                    </div>
+
+                    <div className="bg-gray-300 shadow-xl rounded-xl p-3 cursor-pointer">
+                        <img src="https://www.rokomari.com/static/200/images/icons/home-popular-category/Serial14.png" alt="superstore" className="size-16 bg-blend-color-burn mx-auto" />
+                        <p className="font-poppins line-clamp-1 mt-3 text-center">Jomuna Farmecy</p>
+                    </div>
+
+                    <div className="bg-gray-300 shadow-xl rounded-xl p-3 cursor-pointer">
+                        <img src="https://www.rokomari.com/static/200/images/icons/home-popular-category/Serial14.png" alt="superstore" className="size-16 bg-blend-color-burn mx-auto" />
+                        <p className="font-poppins line-clamp-1 mt-3 text-center">Jomuna Farmecy</p>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };

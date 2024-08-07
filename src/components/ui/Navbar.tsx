@@ -2,12 +2,14 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const NavBarLink = <>
-        <NavLink to={"#"} className={({isActive})=> `${isActive && 'text-white'} mr-5`}>Home</NavLink>
-        <NavLink to={"/ll"} className={({isActive})=> `${isActive && 'text-white'} mr-5`}>Home</NavLink>
-        <NavLink to={"/ll"} className={({isActive})=> `${isActive && 'text-white'} mr-5`}>Home</NavLink>
+        <NavLink to={"/"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Home</NavLink>
+        <NavLink to={"/category"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Category</NavLink>
+        <NavLink to={"/contact"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Contact</NavLink>
+        <NavLink to={"/about"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>About</NavLink>
+        <NavLink to={"/sign-up"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Sign Up</NavLink>
     </>
     return (
-        <div className="max-w-5xl bg-black bg-opacity-40 rounded-full m-3 xl:mx-auto backdrop-blur-3xl">
+        <div className="max-w-5xl bg-black bg-opacity-40 rounded-full m-3 lg:mx-auto backdrop-blur-3xl">
             <div className="navbar font-poppins">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -39,7 +41,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to={'#'} className="px-7 rounded-full hover:bg-white hover:text-black py-2 border hidden md:block border-white">Login</Link>
+                    <Link to={'/login'} className="px-7 rounded-full hover:bg-white hover:text-black py-2 border hidden md:block border-white">Login</Link>
                 </div>
             </div>
         </div>
