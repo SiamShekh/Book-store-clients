@@ -1,6 +1,10 @@
+import { useDispatch } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
+import { Toggle } from "../../redux/slice/NavbarToggle";
 
 const Navbar = () => {
+    const dispatch = useDispatch();
+
     const NavBarLink = <>
         <NavLink to={"/"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Home</NavLink>
         <NavLink to={"/category"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Category</NavLink>
@@ -8,12 +12,13 @@ const Navbar = () => {
         <NavLink to={"/about"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>About</NavLink>
         <NavLink to={"/sign-up"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Sign Up</NavLink>
     </>
+
     return (
-        <div className="max-w-5xl bg-black bg-opacity-40 rounded-full m-3 lg:mx-auto backdrop-blur-3xl">
+        <div className={`max-w-5xl bg-black bg-opacity-40 rounded-full m-3 lg:mx-auto backdrop-blur-3xl`}>
             <div className="navbar font-poppins">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" onClick={() => dispatch(Toggle(true))} className="btn btn-ghost lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5"
