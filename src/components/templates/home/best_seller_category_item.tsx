@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Best_seller_category_item = () => {
     const [onHover, setHover] = useState(false);
     return (
-        <div>
-            <div className="relative bg-black bg-opacity-15 shadow-lg h-48 rounded-lg" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+        <div className="p-[1px] bg-gradient-to-b from-transparent to-blue-800 rounded-lg">
+            <div className="relative h-48 rounded-lg bg-white" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
                 <div className="rounded-t-lg absolute top-0">
                     <img src="https://ds.rokomari.store/rokomari110/category/5aefd05f226f4_image.webp" alt="book" className={`w-full h-32 object-cover rounded-t-lg ${onHover && 'opacity-30'}`} />
                     {
