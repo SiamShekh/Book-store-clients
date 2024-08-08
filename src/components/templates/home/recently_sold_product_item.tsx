@@ -16,7 +16,8 @@ const Recently_sold_product_item = () => {
                 </div>
 
                 <div className="p-3 absolute bottom-0">
-                    <p className="text-xs line-clamp-3 font-poppins ">Programming by jhanker mahmuud</p>
+                    <p className="text-xs line-clamp-2 font-poppins ">Programming on HTML and row javascript and c++</p>
+                    <p className="text-xs line-clamp-1 font-poppins mt-1"><span className="font-bold">Auth:</span>Jhanker mahmud</p>
                     <p className="font-bold font-poppins text-xl text-center">TK.130</p>
                 </div>
             </div>

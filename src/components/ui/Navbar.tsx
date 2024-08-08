@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const NavBarLink = <>
         <NavLink to={"/"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Home</NavLink>
-        <NavLink to={"/category"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Category</NavLink>
+        <NavLink to={"/product"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Product</NavLink>
         <NavLink to={"/contact"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Contact</NavLink>
         <NavLink to={"/about"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>About</NavLink>
         <NavLink to={"/sign-up"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Sign Up</NavLink>
