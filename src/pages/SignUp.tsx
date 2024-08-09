@@ -13,17 +13,17 @@ const SignUp = () => {
                 <img src={logo} alt="" />
                 <h3 className="capitalize font-teko text-3xl mt-10">Create an account</h3>
 
-                <div className="flex items-center w-72 lg:w-80 px-10 py-2 border-black border-t border-l border-b-2 border-r-2 capitalize font-genos font-bold cursor-pointer hover:bg-black hover:text-white justify-center gap-3">
+                <div className="flex items-center w-72 lg:w-80 px-10 py-2 border-black border-t border-l border-b-4 border-r-4 capitalize font-genos font-bold cursor-pointer hover:bg-black hover:text-white justify-center gap-3">
                     <FaGoogle className="size-6" />
                     <p>continue with google</p>
                 </div>
 
-                <div className="flex items-center w-72 lg:w-80 px-10 py-2 border-black border-t border-l border-b-2 border-r-2 capitalize font-genos font-bold cursor-pointer hover:bg-black hover:text-white justify-center gap-3">
+                <div className="flex items-center w-72 lg:w-80 px-10 py-2 border-black border-t border-l border-b-4 border-r-4 capitalize font-genos font-bold cursor-pointer hover:bg-black hover:text-white justify-center gap-3">
                     <FaApple className="size-6" />
                     <p>continue with apple</p>
                 </div>
 
-                <div className="flex items-center w-72 lg:w-80 px-10 py-2 border-black border-t border-l border-b-2 border-r-2 capitalize font-genos font-bold cursor-pointer hover:bg-black hover:text-white justify-center gap-3">
+                <div className="flex items-center w-72 lg:w-80 px-10 py-2 border-black border-t border-l border-b-4 border-r-4 capitalize font-genos font-bold cursor-pointer hover:bg-black hover:text-white justify-center gap-3">
                     <FaGithub className="size-6" />
                     <p>continue with github</p>
                 </div>
@@ -33,7 +33,7 @@ const SignUp = () => {
                 </p>
 
                 <p className="w-80 text-center font-poppins font-bold text-black">
-                Already have an account? <a href="/#" className="text-blue-600">Log in</a>
+                Already have an account? <a href="/sign-in" className="text-blue-600">Log in</a>
                 </p>
 
             </div>
