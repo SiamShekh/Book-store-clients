@@ -8,6 +8,7 @@ const Navbar = () => {
     const NavBarLink = <>
         <NavLink to={"/"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Home</NavLink>
         <NavLink to={"/product"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Product</NavLink>
+        <NavLink to={"/cart"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Cart</NavLink>
         <NavLink to={"/contact"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Contact</NavLink>
         <NavLink to={"/about"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>About</NavLink>
         <NavLink to={"/sign-up"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Sign Up</NavLink>

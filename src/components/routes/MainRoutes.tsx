@@ -7,6 +7,7 @@ import About from "../../pages/About";
 import Contact from "../../pages/Contact";
 import SignUp from "../../pages/SignUp";
 import SignIn from "../../pages/SignIn";
+import Carts from "../../pages/Carts";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const MainRoutes = createBrowserRouter([
             {
                 path: 'contact',
                 element: <Contact />
+            },
+            {
+                path: 'cart',
+                element: <Carts />
             },
         ]
     },
