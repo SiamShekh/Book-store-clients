@@ -23,7 +23,7 @@ const User = <tr>
     <td>78</td>
     <td>98</td>
     <th>
-        <button className="btn btn-ghost btn-xs">details</button>
+        <a href="/admin/user/lo" className="btn btn-ghost btn-xs">details</a>
     </th>
 </tr>;
 
