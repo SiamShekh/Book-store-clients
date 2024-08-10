@@ -15,6 +15,7 @@ import ProductDetails from "../../pages/ProductDetails";
 import Dashboard from "../../pages/Seller/Dashboard";
 import AdminDashboard from "../../pages/admin/Dashboard";
 import AdminLayouts from "../layouts/AdminLayouts";
+import Userlist from "../../pages/admin/Userlist";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -67,7 +68,7 @@ const MainRoutes = createBrowserRouter([
             }
         ]
     },
-    
+
     {
         path: '/admin/',
         errorElement: <NotFound />,
@@ -77,6 +78,10 @@ const MainRoutes = createBrowserRouter([
                 index: true,
                 element: <AdminDashboard />
             },
+            {
+                path: 'user',
+                element: <Userlist />
+            }
         ]
     },
     {
