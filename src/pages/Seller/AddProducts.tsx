@@ -18,6 +18,7 @@ const AddProducts = () => {
                     <input type="file" multiple className="w-full file-input file-input-ghost flex-1 outline-none bg-transparent px-5 py-1 border border-black border-b-4 border-r-4 text-black" />
                 </div>
 
+                <textarea className="w-full file-input file-input-ghost flex-1 mt-5 outline-none bg-transparent px-5 py-1 border border-black border-b-4 border-r-4 text-black h-40" placeholder="description"/>
                 <button className="mt-5 hover:bg-black hover:text-white outline-none bg-transparent px-5 py-1 border border-black border-b-4 border-r-4 text-black">Check Preview</button>
             </form>
 
