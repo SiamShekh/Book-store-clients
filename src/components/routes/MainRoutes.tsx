@@ -13,6 +13,8 @@ import SellerLayouts from "../layouts/SellerLayouts";
 import ProductManagement from "../../pages/Seller/ProductManagement";
 import ProductDetails from "../../pages/ProductDetails";
 import Dashboard from "../../pages/Seller/Dashboard";
+import AdminDashboard from "../../pages/admin/Dashboard";
+import AdminLayouts from "../layouts/AdminLayouts";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -63,6 +65,18 @@ const MainRoutes = createBrowserRouter([
                 path: 'product-management',
                 element: <ProductManagement />
             }
+        ]
+    },
+    
+    {
+        path: '/admin/',
+        errorElement: <NotFound />,
+        element: <AdminLayouts />,
+        children: [
+            {
+                index: true,
+                element: <AdminDashboard />
+            },
         ]
     },
     {
