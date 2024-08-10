@@ -17,6 +17,8 @@ import AdminDashboard from "../../pages/admin/Dashboard";
 import AdminLayouts from "../layouts/AdminLayouts";
 import Userlist from "../../pages/admin/Userlist";
 import UserProfileOverview from "../../pages/admin/UserProfileOverview";
+import Booklist from "../../pages/admin/Booklist";
+import Account from "../../pages/Account";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -47,6 +49,10 @@ const MainRoutes = createBrowserRouter([
             {
                 path: 'product-details/:id',
                 element: <ProductDetails />
+            },
+            {
+                path: 'account',
+                element: <Account />
             },
         ]
     },
@@ -86,6 +92,10 @@ const MainRoutes = createBrowserRouter([
             {
                 path: 'user/:id',
                 element: <UserProfileOverview />
+            },
+            {
+                path: 'book',
+                element: <Booklist />
             }
         ]
     },

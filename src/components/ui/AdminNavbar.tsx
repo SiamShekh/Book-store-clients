@@ -6,7 +6,10 @@ const AdminNavbar = () => {
         <NavLink to={"/"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Home</NavLink>
 
         <NavLink to={"/admin"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Dashboard</NavLink>
+
         <NavLink to={"/admin/user"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Userlist</NavLink>
+
+        <NavLink to={"/admin/book"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Booklist</NavLink>
     </>
 
     return (

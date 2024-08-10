@@ -11,6 +11,7 @@ const Navbar = () => {
         <NavLink to={"/cart"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Cart</NavLink>
         <NavLink to={"/contact"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Contact</NavLink>
         <NavLink to={"/about"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>About</NavLink>
+        <NavLink to={"/account"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Account</NavLink>
         <NavLink to={"/sign-up"} className={({ isActive }) => `${isActive && 'text-white'} mr-5`}>Sign Up</NavLink>
     </>
 

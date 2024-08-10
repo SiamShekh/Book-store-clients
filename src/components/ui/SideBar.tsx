@@ -27,6 +27,10 @@ const SideBar = () => {
                         <NavLink to={'/cart'} className={({ isActive }) => `opacity-50 block font-genos text-2xl text-center ${isActive ? 'text-black px-10 rounded-lg py-1 opacity-100 bg-white' : 'bg-transparent text-white'}`}>Cart</NavLink>
                         <NavLink to={'/about'} className={({ isActive }) => `opacity-50 block font-genos text-2xl text-center ${isActive ? 'text-black px-10 rounded-lg py-1 opacity-100 bg-white' : 'bg-transparent text-white'}`}>About</NavLink>
 
+                        <NavLink to={'/account'} className={({ isActive }) => `opacity-50 block font-genos text-2xl text-center ${isActive ? 'text-black px-10 rounded-lg py-1 opacity-100 bg-white' : 'bg-transparent text-white'}`}>Account</NavLink>
+
+                        <NavLink to={'/sign-up'} className={({ isActive }) => `opacity-50 block font-genos text-2xl text-center ${isActive ? 'text-black px-10 rounded-lg py-1 opacity-100 bg-white' : 'bg-transparent text-white'}`}>Signup</NavLink>
+
                     </div>
                 </Menu>
             </Sidebar>;

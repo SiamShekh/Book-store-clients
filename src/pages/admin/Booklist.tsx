@@ -1,5 +1,4 @@
-
-const User = <tr>
+const Book = <tr>
     <th>
         <label>
             <input type="checkbox" className="checkbox" />
@@ -15,23 +14,23 @@ const User = <tr>
                 </div>
             </div>
             <div>
-                <div className="font-bold">Siam Sheikh</div>
-                <div className="text-sm opacity-50">siam62349@gmail.com</div>
+                <div className="font-bold line-clamp-1">PH from Programming Hero</div>
+                <div className="text-sm opacity-50">Jhanker Mahmud</div>
             </div>
         </div>
     </td>
-    <td>78</td>
-    <td>98</td>
+    <td>75 TK</td>
+    <td>780</td>
+    <td>Category</td>
     <th>
-        <a href="/admin/user/lo" className="btn btn-ghost btn-xs">details</a>
-        <a href="/admin/user/lo" className="btn btn-ghost btn-xs">blocked</a>
+        <a href="/product-details/amitom" className="btn btn-ghost btn-xs">details</a>
+        <button className="btn btn-ghost btn-xs">report</button>
     </th>
 </tr>;
 
-const Userlist = () => {
+const Booklist = () => {
     return (
         <div>
-            {/* <p className="text-black font-poppins text-xl">Userlist</p> */}
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
@@ -43,18 +42,19 @@ const Userlist = () => {
                                 </label>
                             </th>
                             <th>Name</th>
-                            <th>Carts</th>
-                            <th>Order</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Category</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        {User}
-                        {User}
-                        {User}
-                        {User}
-                        {User}
-
+                        {Book}
+                        {Book}
+                        {Book}
+                        {Book}
+                        {Book}
+                        {Book}
                     </tbody>
                     {/* foot */}
                     <tfoot>
@@ -72,4 +72,4 @@ const Userlist = () => {
     );
 };
 
-export default Userlist;
+export default Booklist;
