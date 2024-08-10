@@ -8,6 +8,9 @@ import Contact from "../../pages/Contact";
 import SignUp from "../../pages/SignUp";
 import SignIn from "../../pages/SignIn";
 import Carts from "../../pages/Carts";
+import AddProducts from "../../pages/Seller/AddProducts";
+import SellerLayouts from "../layouts/SellerLayouts";
+import ProductManagement from "../../pages/Seller/ProductManagement";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -37,7 +40,21 @@ const MainRoutes = createBrowserRouter([
             },
         ]
     },
-
+    {
+        path: '/seller/',
+        errorElement: <NotFound />,
+        element: <SellerLayouts />,
+        children: [
+            {
+                path: 'add-product',
+                element: <AddProducts />
+            },
+            {
+                path: 'product-management',
+                element: <ProductManagement />
+            }
+        ]
+    },
     {
         path: 'sign-up',
         element: <SignUp />

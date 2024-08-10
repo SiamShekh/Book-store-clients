@@ -3,10 +3,11 @@ import Recently_sold_product_item from "../components/templates/home/recently_so
 const Product = () => {
     return (
         <div>
-            <header about="header of the product" className="flex items-center justify-between">
+            
+            <header about="header of the product" className="flex items-center justify-between flex-col md:flex-row gap-5">
                 <p className="font-poppins font-medium">301 Book Loaded</p>
                 <form className="flex items-center gap-3 bg-gray-300 pl-5 pr-2 py-2 rounded-full">
-                    <input type="text" placeholder="search..." className="font-poppins text-black placeholder:text-black bg-transparent outline-none w-64" />
+                    <input type="text" placeholder="search..." className="font-poppins text-black placeholder:text-black bg-transparent outline-none" />
                     <button type="submit" className="border-t border-l border-r-4 border-b-4 hover:bg-black hover:text-white text-black border-black px-3 py-1 rounded-full">Search</button>
                 </form>
 
@@ -21,7 +22,7 @@ const Product = () => {
             </header>
 
             <section about="section of products">
-                <div className="grid grid-cols-5 gap-2 mt-5">
+                <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-2 mt-5">
                     <Recently_sold_product_item/>
                     <Recently_sold_product_item/>
                     <Recently_sold_product_item/>
