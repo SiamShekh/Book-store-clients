@@ -11,6 +11,7 @@ import Carts from "../../pages/Carts";
 import AddProducts from "../../pages/Seller/AddProducts";
 import SellerLayouts from "../layouts/SellerLayouts";
 import ProductManagement from "../../pages/Seller/ProductManagement";
+import ProductDetails from "../../pages/ProductDetails";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ const MainRoutes = createBrowserRouter([
             {
                 path: 'cart',
                 element: <Carts />
+            },
+            {
+                path: 'product-details/:id',
+                element: <ProductDetails />
             },
         ]
     },

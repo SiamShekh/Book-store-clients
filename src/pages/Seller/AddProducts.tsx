@@ -15,7 +15,6 @@ const AddProducts = () => {
 
                 <div className="flex justify-between items-center gap-3 flex-col md:flex-row">
                     <input type="file" className="w-full file-input file-input-ghost flex-1 outline-none bg-transparent px-5 py-1 border border-black border-b-4 border-r-4 text-black" />
-                    <input type="file" multiple className="w-full file-input file-input-ghost flex-1 outline-none bg-transparent px-5 py-1 border border-black border-b-4 border-r-4 text-black" />
                 </div>
 
                 <textarea className="w-full file-input file-input-ghost flex-1 mt-5 outline-none bg-transparent px-5 py-1 border border-black border-b-4 border-r-4 text-black h-40" placeholder="description"/>

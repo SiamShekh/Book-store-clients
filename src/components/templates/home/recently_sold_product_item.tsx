@@ -11,7 +11,7 @@ const Recently_sold_product_item = () => {
 
                     {
                         onHover &&
-                        <Link className="bg-orange-500 px-3 py-1 rounded-lg absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-poppins text-xs" to={'/#'}>View more</Link>
+                        <Link className="bg-orange-500 px-3 py-1 rounded-lg absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-poppins text-xs" to={'/product-details/amitom'}>View more</Link>
                     }
                 </div>
 
