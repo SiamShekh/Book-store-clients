@@ -12,6 +12,7 @@ import AddProducts from "../../pages/Seller/AddProducts";
 import SellerLayouts from "../layouts/SellerLayouts";
 import ProductManagement from "../../pages/Seller/ProductManagement";
 import ProductDetails from "../../pages/ProductDetails";
+import Dashboard from "../../pages/Seller/Dashboard";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -50,6 +51,10 @@ const MainRoutes = createBrowserRouter([
         errorElement: <NotFound />,
         element: <SellerLayouts />,
         children: [
+            {
+                index: true,
+                element: <Dashboard />
+            },
             {
                 path: 'add-product',
                 element: <AddProducts />

@@ -4,10 +4,17 @@ const SellerNavbar = () => {
 
     const NavBarLink = <>
         <NavLink to={"/"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Home</NavLink>
+
+        <NavLink to={"/seller"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Dashboard</NavLink>
+
         <NavLink to={"/seller/add-product"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Add Product</NavLink>
+
         <NavLink to={"/seller/product-management"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Product Management</NavLink>
+
         <NavLink to={"/contact"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Contact</NavLink>
+
         <NavLink to={"/about"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>About</NavLink>
+
         <NavLink to={"/sign-up"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Sign Up</NavLink>
     </>
 
