@@ -19,6 +19,9 @@ import Userlist from "../../pages/admin/Userlist";
 import UserProfileOverview from "../../pages/admin/UserProfileOverview";
 import Booklist from "../../pages/admin/Booklist";
 import Account from "../../pages/Account";
+import OrderManagement from "../../pages/Seller/OrderManagement";
+import OrderDetails from "../../pages/Seller/OrderDetails";
+import AllOrder from "../../pages/admin/AllOrder";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -72,6 +75,14 @@ const MainRoutes = createBrowserRouter([
             {
                 path: 'product-management',
                 element: <ProductManagement />
+            },
+            {
+                path: 'order-management',
+                element: <OrderManagement />
+            },
+            {
+                path: 'order-details/:id',
+                element: <OrderDetails />
             }
         ]
     },
@@ -96,6 +107,11 @@ const MainRoutes = createBrowserRouter([
             {
                 path: 'book',
                 element: <Booklist />
+            },
+            
+            {
+                path: 'all-order',
+                element: <AllOrder />
             }
         ]
     },

@@ -9,7 +9,21 @@ const SellerNavbar = () => {
 
         <NavLink to={"/seller/add-product"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Add Product</NavLink>
 
-        <NavLink to={"/seller/product-management"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Product Management</NavLink>
+        <div className="dropdown hidden lg:block">
+            <div tabIndex={0} role="button" className=" text-black opacity-70 my-2 md:mr-5">Management</div>
+            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box  z-[1] w-52 p-2 shadow">
+
+                <NavLink to={"/seller/product-management"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Product Management</NavLink>
+
+                <NavLink to={"/seller/order-management"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Order Management</NavLink>
+            </ul>
+        </div>
+
+        <div className="lg:hidden">
+            <NavLink to={"/seller/product-management"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 block my-2 md:mr-5`}>Product Management</NavLink>
+
+            <NavLink to={"/seller/order-management"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 block my-2 md:mr-5`}>Order Management</NavLink>
+        </div>
 
         <NavLink to={"/contact"} className={({ isActive }) => `${isActive && 'text-opacity-100 font-bold'} text-black opacity-70 my-2 md:mr-5`}>Contact</NavLink>
 
